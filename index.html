@@ -1,97 +1,116 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Brasil — Portal</title>
-<meta name="description" content="Portal introdutório sobre o Brasil: geografia, cultura, economia, turismo e curiosidades.">
-<style>
-:root{--bg:#ffffff;--card:#ffffff;--accent:#006d77;--muted:#445566}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Roboto,Arial;color:#073b4c;background:linear-gradient(180deg,#f8fbfc 0%,#ffffff 100%);-webkit-font-smoothing:antialiased}
-.wrap{max-width:1100px;margin:20px auto;padding:20px}
-header{display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:12px}
-.mark{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2a9d8f);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
-nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:700}
-.hero{display:flex;gap:20px;align-items:center;background:var(--card);padding:28px;border-radius:12px;box-shadow:0 8px 24px rgba(3,7,18,0.06);margin-top:18px}
-.hero h1{margin:0;font-size:30px}
-.lead{color:var(--muted);margin-top:8px}
-.grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px;align-items:start}
-.card{background:var(--card);padding:16px;border-radius:12px}
-.section-title{display:flex;justify-content:space-between;align-items:center}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-.feature{padding:12px;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.02),transparent)}
-footer{margin-top:26px;color:var(--muted);font-size:13px}
-ul.plain{margin:0;padding-left:18px;color:var(--muted)}
-@media(max-width:900px){.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.mark{width:44px;height:44px}}
-@media(max-width:520px){.features{grid-template-columns:1fr}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conhecendo o Brasil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: url("sua-imagem-introducao.png") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #ffcc33;
+    }
+    header p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.2em;
+    }
+    section {
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    section img {
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    section .texto {
+      max-width: 600px;
+      margin: 10px;
+    }
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+    .cultura h2, .pontos h2 {
+      color: #f39c12;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-<div class="brand">
-<div class="mark">BR</div>
-<div>
-<div style="font-weight:800">Brasil — Portal</div>
-<div style="font-size:13px;color:var(--muted)">Conheça o país: natureza, cultura e economia</div>
-</div>
-</div>
-<nav>
-<a href="#sobre">Sobre</a>
-<a href="#geografia">Geografia</a>
-<a href="#cultura">Cultura</a>
-<a href="#turismo">Turismo</a>
-<a href="#contato">Contato</a>
-</nav>
-</header>
 
+  <header>
+    <h1>CONHECENDO O BRASIL</h1>
+    <p>Nesta página você vai conhecer mais sobre o Brasil: pontos turísticos, comidas típicas, fauna, marcas e criações do País.</p>
+    <p><b>Autores:</b> Humberto Queiróz, Davi Nunes e Guilherme Ferreira</p>
+  </header>
 
-<main>
-<section class="hero">
-<div style="flex:1">
-<h1>Bem‑vindo ao Brasil</h1>
-<p class="lead">O Brasil é o maior país da América do Sul, conhecido por sua enorme biodiversidade, cultura vibrante e mistura de povos e tradições. Nesta página você encontra um panorama rápido sobre o país.</p>
-<div class="features">
-<div class="feature"><strong>Área</strong><div class="small">~8,5 milhões km²</div></div>
-<div class="feature"><strong>População</strong><div class="small">~215 milhões (estimativa)</div></div>
-<div class="feature"><strong>Língua</strong><div class="small">Português</div></div>
-</div>
-</div>
-<aside style="width:320px" class="card">
-<h3 style="margin-top:0">Fatos rápidos</h3>
-<ul class="plain">
-<li>Capital: Brasília</li>
-<li>Moeda: Real (BRL)</li>
-<li>Clima: tropical, equatorial e subtropical</li>
-</ul>
-</aside>
-</section>
+  <section class="flora">
+    <img src="sua-imagem-flora.png" alt="Flora Brasileira">
+    <div class="texto">
+      <h2>Flora Brasileira</h2>
+      <p>A flora brasileira é considerada uma das mais ricas do mundo, reunindo cerca de 50 mil espécies de plantas, muitas endêmicas. Na Amazônia, destacam-se árvores como a castanheira e a seringueira; na Mata Atlântica, o pau-brasil, jequitibás e bromélias; no Cerrado, espécies resistentes como o pequizeiro e o buriti; na Caatinga, plantas adaptadas à seca, como cactos e o juazeiro; no Pantanal, aguapés e cambarás; e no Pampa, campos de gramíneas e arbustos.</p>
+      <p>A flora é essencial para o equilíbrio ecológico, a economia e a cultura brasileira, sendo símbolo de identidade nacional.</p>
+    </div>
+  </section>
 
+  <section class="cultura">
+    <img src="sua-imagem-cultura.png" alt="Cultura Brasileira">
+    <div class="texto">
+      <h2>Cultura Brasileira</h2>
+      <p>A cultura brasileira é diversa e resultado da mistura de influências indígenas, africanas, europeias e de outros povos. Essa pluralidade aparece nas manifestações populares – carnaval, festas juninas, bumba-meu-boi e frevo –; na música, que vai do samba e da bossa nova ao forró, funk e sertanejo; e também na culinária, com pratos típicos como feijoada, moqueca, acarajé e churrasco.</p>
+      <p>Na literatura, nomes como Machado de Assis, Jorge Amado e Clarice Lispector marcaram a identidade nacional. Já nas artes e na arquitetura, Tarsila do Amaral e Oscar Niemeyer ganharam destaque mundial.</p>
+      <p>O esporte, principalmente o futebol, também faz parte da identidade cultural do país.</p>
+    </div>
+  </section>
 
-<div class="grid">
-<div>
-<section id="sobre" class="card">
-<div class="section-title"><h2 style="margin:0">Sobre o Brasil</h2></div>
-<p class="small">O Brasil foi colonizado por Portugal a partir do século XVI. Hoje é uma república federativa composta por 26 estados e o Distrito Federal. Possui grande diversidade cultural e ambiental, incluindo parte significativa da Floresta Amazônica.</p>
-</section>
+  <section class="pontos">
+    <img src="sua-imagem-pontos.png" alt="Pontos Turísticos">
+    <div class="texto">
+      <h2>Pontos Turísticos</h2>
+      <ul>
+        <li><b>Cristo Redentor (RJ):</b> uma das sete maravilhas do mundo moderno, no alto do Corcovado.</li>
+        <li><b>Pão de Açúcar (RJ):</b> cartão-postal do Rio de Janeiro, com vista panorâmica da cidade.</li>
+        <li><b>Pantanal (MS/MT):</b> maior área alagável do planeta, rico em fauna e flora.</li>
+        <li><b>Lençóis Maranhenses (MA):</b> dunas de areia branca com lagoas cristalinas.</li>
+        <li><b>Chapada Diamantina (BA):</b> região de trilhas, cachoeiras e grutas.</li>
+        <li><b>Gramado (RS):</b> famosa pelo clima europeu, chocolates e o Natal Luz.</li>
+      </ul>
+    </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 - Conhecendo o Brasil | Projeto Escolar</p>
+  </footer>
 
-<section id="geografia" class="card" style="margin-top:16px">
-<h2 style="margin-top:0">Geografia</h2>
-<p class="small">Regiões distintas: Norte (Amazônia), Nordeste (litoral e sertão), Centro‑Oeste (Pantanal), Sudeste (industrializado) e Sul (clima mais temperado). Rios importantes: Amazonas, São Francisco e Paraná.</p>
-</section>
-
-
-<section id="cultura" class="card" style="margin-top:16px">
-<h2 style="margin-top:0">Cultura</h2>
-<p class="small">Cultura marcada pela mistura de influências indígenas, africanas e europeias. Música (samba, bossa nova, forró), festas (Carnaval), culinária regional e manifestações artísticas diversas.</p>
-</section>
-
-
-<section id="economia" class="card" style="margin-top:16px">
-<h2 style="margin-top:0">Economia</h2>
-<p class="small">Economia diversificada: agronegócio (soja, café, carne), indústria, serviços e setor de energia (hidrelétricas, petróleo). Desafios: desigualdade, infraestrutura e desenvolvimento regional.</p>
-</section>
+</body>
+</html>
